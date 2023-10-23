@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GNda6HSidNkRjK3SvYxbeWAnvxOEsVe+PLqQXjoGKCIAeTqlsuGLcJogat6uufblKh4Fxtr8mwlyx7mK9BLFcw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\Reptile_Tools\\Reptile_Tools\\Reptile_Tools.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
