@@ -35,13 +35,10 @@ namespace Reptile_Tools
             PythonCodeTextbox.Text +=("url:\r\n");
             PythonCodeTextbox.Text +=(curldata.url + "\r\n");
             PythonCodeTextbox.Text += ("headers:\r\n");
-            Dictionary<string, string> header = curldata.headers;
-            PythonCodeTextbox.Text += "{\r\n";
-            foreach (var item in header)
-            {
-                PythonCodeTextbox.Text += $"    \"{item.Key}\": \"{item.Value}\",\r\n";
-            }
-            PythonCodeTextbox.Text += "}\r\n";
+            PythonCodeTextbox.Text += ToPythonCode.HeaderToString(curldata.headers);
+            string a = ToPythonCode.BodyToString(curldata.body);
+            PythonCodeTextbox.Text = a;
+            //PythonCodeTextbox.Text = curlday
             return Array_data;
         }
         private void Button_Click(object sender, RoutedEventArgs e)

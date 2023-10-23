@@ -22,7 +22,7 @@
         </StackPanel>
         <DockPanel Grid.Column="1">
             <TextBox DockPanel.Dock="Top" Margin="5" Height="350" />
-            <TextBox x:Name="PythonCodeTextbox" DockPanel.Dock="Bottom" Margin="5" Height="350"/>
+            <TextBox x:Name="PythonCodeTextbox" DockPanel.Dock="Bottom" Margin="5" Height="350" AcceptsReturn="False"></TextBox>
             <CheckBox Content="代理" Margin="5" FontSize="16" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <CheckBox Content="函数封装" Margin="5" FontSize="16" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <CheckBox Content="类封装" Margin="5" FontSize="16" Height="30" HorizontalAlignment="Left" VerticalAlignment="Center"/>

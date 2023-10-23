@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Reptile_Tools\\Reptile_Tools\\Reptile_Tools.csproj",
+      "projectUniqueName": "E:\\Reptile_Tools\\Reptile_Tools\\Reptile_Tools.csproj",
       "projectName": "Reptile_Tools",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\Reptile_Tools\\Reptile_Tools\\Reptile_Tools.csproj",
+      "projectPath": "E:\\Reptile_Tools\\Reptile_Tools\\Reptile_Tools.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\Reptile_Tools\\Reptile_Tools\\obj\\",
+      "outputPath": "E:\\Reptile_Tools\\Reptile_Tools\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

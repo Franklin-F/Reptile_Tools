@@ -22,7 +22,7 @@ namespace Reptile_Tools
             this.restring = restring;
             this.url = this.CurlToUrl(this.restring);
             this.headers = this.CurlToHeaders(this.restring);
-
+            this.body = this.CurlTobody(this.restring);
         }
 
         public string CurlToUrl(string restring)
@@ -47,9 +47,9 @@ namespace Reptile_Tools
             }
             return headers;
         }
-        public Dictionary<string,string> CurlTobody(string restring)
+        public Dictionary<string,object> CurlTobody(string restring)
         {
-            Dictionary<string, string> body = new Dictionary<string, string>();
+            Dictionary<string, object> body = new Dictionary<string, object>();
             string pattern = "--data-raw '(.*?)'";
             Match match = Regex.Match(restring, pattern);
             if (match.Success && match.Groups.Count > 1)
@@ -57,7 +57,7 @@ namespace Reptile_Tools
                 string dataRawContent = match.Groups[1].Value;
 
                 // 将data-raw内容解析为字典
-                body = JsonConvert.DeserializeObject<Dictionary<string, string>>(dataRawContent);
+                body = JsonConvert.DeserializeObject<Dictionary<string, object>>(dataRawContent);
             }
 
             return body;
