@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Reptile_Tools
-build_property.ProjectDir = E:\Reptile_Tools\Reptile_Tools\
+build_property.ProjectDir = D:\Code\Csharp\Reptile_Tools\Reptile_Tools\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

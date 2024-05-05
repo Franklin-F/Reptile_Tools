@@ -1,0 +1,38 @@
+﻿<Page x:Class="Reptile_Tools.Views.Pages.CurlToRequestsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Reptile_Tools.Views.Pages"
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="800"
+      Title="Curl 转 requests">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <RichTextBox Margin="5"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal" Margin="5 0">
+                <TextBlock Text="封装方式:" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <ComboBox Margin="10 0 20 0" Height="40">
+                    <ComboBoxItem Content="不封装" FontSize="8"/>
+                    <ComboBoxItem Content="类封装"/>
+                    <ComboBoxItem Content="函数封装"/>
+                </ComboBox>
+                <CheckBox Content="加入代理"/>
+                <CheckBox Content="模块引入"/>
+            </StackPanel>
+                <ui:Button Content="转换" Grid.Column="1" Margin="0 0 10 0" Width="100" Height="30" Appearance="Primary"/>
+        </Grid>
+        <RichTextBox Margin="5" Grid.Row="2"/>
+    </Grid>
+</Page>

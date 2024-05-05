@@ -1,43 +1,36 @@
-﻿using Microsoft.VisualBasic;
-using System;
+﻿using Reptile_Tools.Views.Pages;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using Wpf.Ui.Appearance;
+
 
 namespace Reptile_Tools
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow
     {
         public MainWindow()
         {
+            DataContext = this;
+
+            SystemThemeWatcher.Watch(this);
             //CurlToRequests("");
             InitializeComponent();
+            Loaded += (_, _) => RootNavigation.Navigate(typeof(CurlToRequestsPage)); ;
         }
         public List<object> CurlToRequests(string curlstr)
         {
             //PythonCodeTextbox.Text = curlstr;
             List<object> Array_data = new List<object> { };
             CurlProcess curldata = new CurlProcess(curlstr);
-            PythonCodeTextbox.Text +=("url:\r\n");
-            PythonCodeTextbox.Text +=(curldata.url + "\r\n");
-            PythonCodeTextbox.Text += ("headers:\r\n");
-            PythonCodeTextbox.Text += ToPythonCode.HeaderToString(curldata.headers);
-            string a = ToPythonCode.BodyToString(curldata.body);
-            PythonCodeTextbox.Text = a;
+            //PythonCodeTextbox.Text +=("url:\r\n");
+            //PythonCodeTextbox.Text +=(curldata.url + "\r\n");
+            //PythonCodeTextbox.Text += ("headers:\r\n");
+            //PythonCodeTextbox.Text += ToPythonCode.HeaderToString(curldata.headers);
+            //string a = ToPythonCode.BodyToString(curldata.body);
+            //PythonCodeTextbox.Text = a;
             //PythonCodeTextbox.Text = curlday
             return Array_data;
         }
