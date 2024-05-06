@@ -12,10 +12,19 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="9*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="9*"/>
         </Grid.RowDefinitions>
-        <RichTextBox Margin="5"/>
+        <RichTextBox Margin="5" VerticalScrollBarVisibility="Auto" MaxHeight="500" Name="curltextbox">
+            <!--设置行间距-->
+            <RichTextBox.Document>
+                <FlowDocument LineHeight="1" >
+                    <Paragraph FontFamily="Cascadia Mono" TextAlignment="Left">
+                        <Run Text="{Binding Curlstring}"/>
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox.Document>
+        </RichTextBox>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -31,8 +40,19 @@
                 <CheckBox Content="加入代理"/>
                 <CheckBox Content="模块引入"/>
             </StackPanel>
-                <ui:Button Content="转换" Grid.Column="1" Margin="0 0 10 0" Width="100" Height="30" Appearance="Primary"/>
+            <StackPanel Grid.Column="1" Orientation="Horizontal">
+                <ui:Button Content="复制" Margin="0 0 10 0" Width="70" Height="30"/>
+                <ui:Button Content="转换" Margin="0 0 10 0" Width="100" Height="30" Appearance="Primary"/>
+            </StackPanel>
         </Grid>
-        <RichTextBox Margin="5" Grid.Row="2"/>
+        <RichTextBox Margin="5" Grid.Row="2" VerticalScrollBarVisibility="Auto" MaxHeight="500">
+            <RichTextBox.Document>
+                <FlowDocument LineHeight="1" >
+                    <Paragraph FontFamily="Cascadia Mono" TextAlignment="Left">
+                        <Run Text="{Binding PythonCode}"/>
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox.Document>
+        </RichTextBox>
     </Grid>
 </Page>

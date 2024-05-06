@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Reptile_Tools.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,8 +24,9 @@ namespace Reptile_Tools.Views.Pages
 
         public CurlToRequestsPage()
         {
-            DataContext = this;
             InitializeComponent();
+            this.DataContext = new MVVMCurlToRequestsViewModel();
         }
+
     }
 }
