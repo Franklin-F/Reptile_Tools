@@ -70,25 +70,21 @@ namespace Reptile_Tools.ViewModels
         public void UpdaterPythonCode()
         {
             Models.CurlProcess curlProcess = new Models.CurlProcess(Curlstring);
-            //MessageBox.Show(curlProcess.url);
-            //foreach (KeyValuePair<string,string> item in curlProcess.headers)
+
+            //string cookies = "{\r\n";
+            //int flag = 0;
+            //foreach (KeyValuePair<string,string> i in curlProcess.cookies)
             //{
-            //    MessageBox.Show(item.Key + ":" + item.Value);
+            //    string a = "\"";
+            //    if (flag != 0)
+            //    {
+            //        a = ",\r\n\"";
+            //    }
+            //    cookies += a + i.Key  + "\"" + ": \"" + i.Value +"\"";
+            //    flag++;
             //}
-            string cookies = "{\r\n";
-            int flag = 0;
-            foreach (KeyValuePair<string,string> i in curlProcess.cookies)
-            {
-                string a = "\"";
-                if (flag != 0)
-                {
-                    a = ",\r\n\"";
-                }
-                cookies += a + i.Key  + "\"" + ": \"" + i.Value +"\"";
-                flag++;
-            }
-            cookies += "\r\n}";
-            Pythoncode = cookies;
+            //cookies += "\r\n}";
+            //Pythoncode = cookies;
 
         }
         public MVVMCurlToRequestsViewModel()
