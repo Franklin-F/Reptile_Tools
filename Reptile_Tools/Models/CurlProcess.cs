@@ -7,7 +7,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace Reptile_Tools
+namespace Reptile_Tools.Models
 {
     internal class CurlProcess
     {
@@ -15,14 +15,15 @@ namespace Reptile_Tools
         public readonly string url;
         public readonly Dictionary<string, string> headers;
         public readonly Dictionary<string, object> body;
-        public readonly Dictionary<string, string> cookies;
+        public readonly Dictionary<string, string>? cookies;
         public readonly Dictionary<string, string> param;
         public CurlProcess(string restring)
         {
             this.restring = restring;
-            this.url = this.CurlToUrl(this.restring);
-            this.headers = this.CurlToHeaders(this.restring);
-            this.body = this.CurlTobody(this.restring);
+            url = CurlToUrl(this.restring);
+            headers = CurlToHeaders(this.restring);
+            body = CurlTobody(this.restring);
+            cookies = HeaderToCookies(headers);
         }
 
         public string CurlToUrl(string restring)
@@ -35,19 +36,41 @@ namespace Reptile_Tools
         }
         public Dictionary<string, string> CurlToHeaders(string restring)
         {
-            Dictionary<string,string> headers = new Dictionary<string,string>();
+            Dictionary<string, string> headers = new Dictionary<string, string>();
             string pattern = @"-H '(?<name>[\w-]+): (?<value>[^']+)'";
             MatchCollection matches = Regex.Matches(restring, pattern);
             foreach (Match match in matches)
             {
                 string name = match.Groups["name"].Value;
                 string value = match.Groups["value"].Value;
-                if (value.Contains("\"")) { value = value.Replace("\"", "\\\"");}
+                if (value.Contains("\"")) { value = value.Replace("\"", "\\\""); }
                 headers[name] = value;
             }
             return headers;
         }
-        public Dictionary<string,object> CurlTobody(string restring)
+        public Dictionary<string,string>? HeaderToCookies(Dictionary<string, string> headers)
+        {
+            string cookiesString = headers["cookie"];
+            if (cookiesString != null || cookiesString != "") 
+            {
+                headers.Remove("cookie");
+                string pattern = @"(?<key>[^=;]+)=(?<value>[^;]+)";
+                MatchCollection matches = Regex.Matches(cookiesString, pattern);
+                Dictionary<string, string> cookies = new Dictionary<string, string>();
+                foreach (Match match in matches)
+                {
+                    string key = match.Groups["key"].Value;
+                    string value = match.Groups["value"].Value;
+                    cookies.Add(key, value);
+                }
+                return cookies;
+            }
+            else
+            {
+                return null;
+            }
+        }
+        public Dictionary<string, object> CurlTobody(string restring)
         {
             Dictionary<string, object> body = new Dictionary<string, object>();
             string pattern = "--data-raw '(.*?)'";
@@ -55,8 +78,6 @@ namespace Reptile_Tools
             if (match.Success && match.Groups.Count > 1)
             {
                 string dataRawContent = match.Groups[1].Value;
-
-                // 将data-raw内容解析为字典
                 body = JsonConvert.DeserializeObject<Dictionary<string, object>>(dataRawContent);
             }
 

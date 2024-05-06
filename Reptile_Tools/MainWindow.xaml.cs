@@ -14,9 +14,7 @@ namespace Reptile_Tools
         public MainWindow()
         {
             DataContext = this;
-
             SystemThemeWatcher.Watch(this);
-            //CurlToRequests("");
             InitializeComponent();
             Loaded += (_, _) => RootNavigation.Navigate(typeof(CurlToRequestsPage)); ;
         }

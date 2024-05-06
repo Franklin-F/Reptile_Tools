@@ -27,6 +27,5 @@ namespace Reptile_Tools.Views.Pages
             InitializeComponent();
             this.DataContext = new MVVMCurlToRequestsViewModel();
         }
-
     }
 }
