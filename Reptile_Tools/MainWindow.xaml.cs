@@ -16,7 +16,7 @@ namespace Reptile_Tools
             DataContext = this;
             SystemThemeWatcher.Watch(this);
             InitializeComponent();
-            Loaded += (_, _) => RootNavigation.Navigate(typeof(CurlToRequestsPage)); ;
+            Loaded += (_, _) => RootNavigation.Navigate(typeof(CurlToRequestsPage)); 
         }
     }
 }

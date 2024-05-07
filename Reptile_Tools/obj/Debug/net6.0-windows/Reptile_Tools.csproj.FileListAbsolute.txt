@@ -49,15 +49,19 @@ D:\Code\Csharp\Reptile_Tools\Reptile_Tools\bin\Debug\net6.0-windows\Reptile_Tool
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\bin\Debug\net6.0-windows\Reptile_Tools.runtimeconfig.json
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\bin\Debug\net6.0-windows\Reptile_Tools.dll
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\bin\Debug\net6.0-windows\Reptile_Tools.pdb
+D:\Code\Csharp\Reptile_Tools\Reptile_Tools\bin\Debug\net6.0-windows\CommunityToolkit.Mvvm.dll
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\bin\Debug\net6.0-windows\Wpf.Ui.dll
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Reptile_Tools.csproj.AssemblyReference.cache
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\CurlToRequestsPage.g.cs
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\App.g.cs
+D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Reptile_Tools_MarkupCompile.cache
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Reptile_Tools_MarkupCompile.lref
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\App.baml
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\CurlToRequestsPage.baml
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Reptile_Tools.g.resources
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Reptile_Tools.GeneratedMSBuildEditorConfig.editorconfig
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Reptile_Tools.AssemblyInfoInputs.cache
@@ -70,7 +74,3 @@ D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\refint\Repti
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Reptile_Tools.pdb
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Reptile_Tools.genruntimeconfig.cache
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\ref\Reptile_Tools.dll
-D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
-D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\CurlToRequestsPage.g.cs
-D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\CurlToRequestsPage.baml
-D:\Code\Csharp\Reptile_Tools\Reptile_Tools\bin\Debug\net6.0-windows\CommunityToolkit.Mvvm.dll

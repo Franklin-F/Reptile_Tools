@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,20 +13,8 @@ namespace Reptile_Tools.ViewModels
 {
     partial class MVVMCurlToRequestsViewModel:ObservableObject
     {
+        [ObservableProperty]
         public string? _curlstring;
-        public string Curlstring
-        {
-            set 
-            {
-                SetProperty(ref _curlstring, value);
-                Pythoncode = _curlstring;
-            }
-            get
-            {
-                if (_curlstring == null) { _curlstring = "请输入Bash格式的Curl...\r\n"; }
-                return _curlstring;
-            }
-        }
         public string? _pythoncode;
         public string Pythoncode
         {
@@ -86,6 +75,21 @@ namespace Reptile_Tools.ViewModels
             //cookies += "\r\n}";
             //Pythoncode = cookies;
 
+            string parames = "{\r\n";
+            int flag = 0;
+            foreach (KeyValuePair<string, string> i in curlProcess.param)
+            {
+                string a = "\"";
+                if (flag != 0)
+                {
+                    a = ",\r\n\"";
+                }
+                parames += a + i.Key + "\"" + ": \"" + i.Value + "\"";
+                flag++;
+            }
+            parames += "\r\n}";
+            Pythoncode = parames;
+
         }
         public MVVMCurlToRequestsViewModel()
         {
@@ -93,6 +97,13 @@ namespace Reptile_Tools.ViewModels
                 Clipboard.SetText(Pythoncode);
             }, () => CopyButtonEnabled);
         }
-
+        [ObservableProperty]
+        //[NotifyPropertyChangedFor(nameof(Textboxmaxheigh))]
+        private double _textboxmaxheigh;
+        [RelayCommand]
+        private void UpdateTextboxMaxHeight()
+        {
+            Textboxmaxheigh = 500;
+        }
     }
 }
