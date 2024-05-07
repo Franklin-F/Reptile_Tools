@@ -54,7 +54,6 @@ namespace Reptile_Tools.ViewModels
             }
         }
         public RelayCommand CopyButtonClickCommand { get; }
-
         [RelayCommand]
         public void UpdaterPythonCode()
         {
@@ -93,17 +92,12 @@ namespace Reptile_Tools.ViewModels
         }
         public MVVMCurlToRequestsViewModel()
         {
-            CopyButtonClickCommand = new RelayCommand(() => {
+            CopyButtonClickCommand = new RelayCommand(() =>
+            {
                 Clipboard.SetText(Pythoncode);
             }, () => CopyButtonEnabled);
         }
         [ObservableProperty]
-        //[NotifyPropertyChangedFor(nameof(Textboxmaxheigh))]
-        private double _textboxmaxheigh;
-        [RelayCommand]
-        private void UpdateTextboxMaxHeight()
-        {
-            Textboxmaxheigh = 500;
-        }
+        public double _textboxmaxheight;
     }
 }
