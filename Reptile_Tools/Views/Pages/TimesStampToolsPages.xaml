@@ -14,7 +14,7 @@
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FontSize" Value="20"/>
-            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Margin" Value="5 30"/>
         </Style>
     </Page.Resources>
     <Grid>
@@ -26,45 +26,47 @@
             <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="2*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="2*"/>
-                        <ColumnDefinition Width="2*"/>
-                        <ColumnDefinition Width="2*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="2*"/>
-                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <ui:TextBlock Text="现在:" Style="{StaticResource ResourceKey=textblock}" />
-                    <ui:TextBox Grid.Column="1" Grid.ColumnSpan="2" Width="200"/>
+                    <ui:TextBlock Text="现在:" Style="{StaticResource ResourceKey=textblock}"/>
+                    <ui:TextBox Text="{Binding Timestamp}" Grid.Column="1" Grid.ColumnSpan="2" Height="40" Width="150" Margin="5 0"/>
                     <ui:TextBlock Text="控制：" Grid.Column="3" Style="{StaticResource ResourceKey=textblock}"/>
-                    <ui:Button Grid.Column="4" Width="100" Height="40" Content="停止" HorizontalAlignment="Center"/>
-                    
-                    <ui:TextBlock Text="时间戳" Grid.Row="1" Style="{StaticResource ResourceKey=textblock}" />
-                    <ui:TextBox Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" Width="200"/>
-                    <ComboBox Grid.Column="3" Grid.Row="1" SelectedIndex="0">
+                    <ui:Button Grid.Column="4" Width="100" Height="40" Content="{Binding Stopstartbuttontext}" HorizontalAlignment="Center" Command="{Binding StopTimerCommand}"/>
+
+                    <ui:TextBlock Text="时间戳" Grid.Row="1" Style="{StaticResource ResourceKey=textblock}"/>
+                    <ui:TextBox Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" Height="40" Width="150" Margin="5" Text="{Binding Timestamptext}"/>
+                    <ComboBox Grid.Column="3" Grid.Row="1" SelectedIndex="0" Margin="5">
                         <ComboBoxItem Content="秒"/>
                         <ComboBoxItem Content="毫秒"/>
                     </ComboBox>
-                    <ui:Button Grid.Column="4" Grid.Row="1" Width="80" Height="40" Content="转换" HorizontalAlignment="Center" />
-                    <ui:TextBox Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="2" Width="200" />
+                    <ui:Button Grid.Column="4" Grid.Row="1" Width="80" Height="40" Content="转换" HorizontalAlignment="Center" Command="{Binding TimestampToTimeCommand}" IsEnabled="{Binding IsEnableTotime, Mode=TwoWay}"/>
+                    <ui:TextBox Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="2" Height="40" Width="150" Margin="5" Text="{Binding Timetext}"/>
                     <ui:TextBlock Text="北京时间" Grid.Column="7" Grid.Row="1" Style="{StaticResource ResourceKey=textblock}" />
 
-                    <ui:TextBlock Text="时间戳" Grid.Row="2" Style="{StaticResource ResourceKey=textblock}" />
-                    <ui:TextBox Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" Width="200"/>
-                    <ui:TextBlock Text="北京时间" Grid.Column="3" Grid.Row="2" Style="{StaticResource ResourceKey=textblock}" />
-                    
-                    <ui:Button Grid.Column="4" Grid.Row="2" Width="80" Height="40" Content="转换" HorizontalAlignment="Center" />
-                    <ui:TextBox Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="2" Width="200" />
-                    <ComboBox Grid.Column="7" Grid.Row="2" SelectedIndex="0">
+                    <ui:TextBlock Text="时间日期" Grid.Row="2" Style="{StaticResource ResourceKey=textblock}"/>
+                    <ui:TextBox Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" Height="40" Width="150" Margin="5" Text="{Binding Timetext2}"/>
+                    <ui:TextBlock Text="时间戳" Grid.Column="3" Grid.Row="2" Style="{StaticResource ResourceKey=textblock}" />
+
+                    <ui:Button Grid.Column="4" Grid.Row="2" Width="80" Height="40" Content="转换" HorizontalAlignment="Center" Margin="5" Command="{Binding TimeToTimestampCommand}" IsEnabled="{Binding IsEnableTotimestamp}"/>
+                    <ui:TextBox Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="2" Height="40" Width="150" Margin="5" Text="{Binding Timestamptext2}"/>
+                    <ComboBox Grid.Column="7" Grid.Row="2" SelectedIndex="0" Margin="5">
                         <ComboBoxItem Content="秒"/>
                         <ComboBoxItem Content="毫秒"/>
                     </ComboBox>
+                    <TextBlock Grid.Row="3" Grid.ColumnSpan="8" Text="提示: 输入完成后请将输入焦点移到其他,再点转换按钮" Height="40" Foreground="YellowGreen" HorizontalAlignment="Center"/>
                 </Grid>
             </StackPanel>
         </Grid>
