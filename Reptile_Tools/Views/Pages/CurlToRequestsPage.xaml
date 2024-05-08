@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Reptile_Tools.Views.Pages"
       xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
       mc:Ignorable="d" 
-      d:DesignHeight="700" d:DesignWidth="800" SizeChanged="Page_SizeChanged"
+      d:DesignHeight="700" d:DesignWidth="900" SizeChanged="Page_SizeChanged"
       Title="Curl 转 requests">
     <Grid>
         <Grid.RowDefinitions>
@@ -22,15 +22,18 @@
             </Grid.ColumnDefinitions>
             <StackPanel Orientation="Horizontal" Margin="5 0">
                 <TextBlock Text="封装方式:" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <ComboBox Margin="10 0 20 0" Height="40" SelectedIndex="0">
+                <ComboBox Margin="10 0 20 0" Height="40" SelectedIndex="{Binding Selectedindex}">
                     <ComboBoxItem Content="不封装" FontSize="8"/>
                     <ComboBoxItem Content="类封装"/>
                     <ComboBoxItem Content="函数封装"/>
                 </ComboBox>
                 <CheckBox Content="加入代理" IsChecked="{Binding Isproxies}"/>
                 <CheckBox Content="模块引入" IsChecked="{Binding Isimport}"/>
+                <CheckBox Content="禁止重定向" IsChecked="{Binding Isredirect}"/>
+                <CheckBox Content="取消https" IsChecked="{Binding Ishttps}"/>
             </StackPanel>
             <StackPanel Grid.Column="1" Orientation="Horizontal">
+                <ui:Button Content="清空" Margin="0 0 10 0" Width="70" Height="30" Command="{Binding ClearedCommand}"/>
                 <ui:Button Content="复制" Margin="0 0 10 0" Width="70" Height="30" Command="{Binding CopyButtonClickCommand}"/>
                 <ui:Button Content="转换" Margin="0 0 10 0" Width="100" Height="30" Appearance="Primary" Command="{Binding UpdaterPythonCodeCommand}" />
             </StackPanel>

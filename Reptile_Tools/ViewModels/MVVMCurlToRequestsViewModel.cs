@@ -62,22 +62,30 @@ namespace Reptile_Tools.ViewModels
         public void UpdaterPythonCode()
         {
             Models.CurlProcess curlProcess = new Models.CurlProcess(Curlstring);
+            string importcodes = "";
             string codes = "";
             if (Isimport)
             {
-                codes = "import requests\r\n";
-                if (curlProcess.bodycode!=null && curlProcess.bodycode.Contains("json.dumps"))
+                importcodes = "import requests\r\n";
+                if (curlProcess.bodycode != null && curlProcess.bodycode.Contains("json.dumps"))
                 {
-                    codes += "import json\r\n";
+                    importcodes += "import json\r\n";
                 }
-                codes += "\r\n";
+                importcodes += "\r\n";
             }
-            codes += curlProcess.urlcode + curlProcess.headercode + curlProcess.cookiecode + curlProcess.bodycode + curlProcess.paramcode;
+            if (Selectedindex==1)
+            {
+                importcodes += "\tdef get_(self,):\r\n";
+            }else if (Selectedindex == 2)
+            {
+                importcodes+= "def get_():\r\n";
+            }
+            codes += "\r\n" +curlProcess.urlcode + curlProcess.headercode + curlProcess.cookiecode + curlProcess.bodycode + curlProcess.paramcode;
 
             codes += $"res = requests.{curlProcess.method}(";
             if (curlProcess.urlcode != "")
             {
-                codes+= "url=url";
+                codes += "url=url";
             }
             if (curlProcess.headercode != "")
             {
@@ -95,13 +103,29 @@ namespace Reptile_Tools.ViewModels
             {
                 codes += ", params=params";
             }
+            if (Isredirect)
+            {
+                codes += ", allow_redirects=False";
+            }
+            if (Ishttps)
+            {
+                codes += ", verify=False";
+            }
             if (Isproxies)
             {
                 codes += ", proxis={\"http\": \"http://127.0.0.1:7890\", \"https\": \"https://127.0.0.1:7890\"}";
             }
             codes += ")\r\nprint(res.text)\r\n";
-            Pythoncode = codes.ToString();
-
+            if (Selectedindex == 1)
+            {
+                codes = codes.Replace("\r\n", "\r\n\t");
+                codes = codes.Replace("\r\n\t", "\r\n\t\t");
+            }
+            else if (Selectedindex == 2)
+            {
+                codes = codes.Replace("\r\n", "\r\n\t");
+            }
+            Pythoncode = importcodes + codes.ToString();
         }
         public MVVMCurlToRequestsViewModel()
         {
@@ -110,7 +134,20 @@ namespace Reptile_Tools.ViewModels
                 Clipboard.SetText(Pythoncode);
             }, () => CopyButtonEnabled);
         }
+
         [ObservableProperty]
         public double _textboxmaxheight;
+        [ObservableProperty]
+        public int _selectedindex = 0;
+        [ObservableProperty]
+        public bool _isredirect = false;
+        [ObservableProperty]
+        public bool _ishttps = false;
+        [RelayCommand]
+        public void Cleared()
+        {
+            Curlstring = "";
+            Pythoncode = "";
+        }
     }
 }
