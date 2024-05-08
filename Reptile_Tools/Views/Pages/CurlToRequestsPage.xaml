@@ -22,7 +22,7 @@
             </Grid.ColumnDefinitions>
             <StackPanel Orientation="Horizontal" Margin="5 0">
                 <TextBlock Text="封装方式:" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <ComboBox Margin="10 0 20 0" Height="40">
+                <ComboBox Margin="10 0 20 0" Height="40" SelectedIndex="0">
                     <ComboBoxItem Content="不封装" FontSize="8"/>
                     <ComboBoxItem Content="类封装"/>
                     <ComboBoxItem Content="函数封装"/>

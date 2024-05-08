@@ -14,7 +14,7 @@ namespace Reptile_Tools.Models
     internal class CurlProcess
     {
         public string restring;
-        public readonly string url;
+        public string url;
         public readonly Dictionary<string, string> headers;
         public readonly string body;
         public readonly Dictionary<string, string>? cookies;
@@ -34,7 +34,7 @@ namespace Reptile_Tools.Models
             url = CurlToUrl(this.restring);
             headers = CurlToHeaders(this.restring);
             body = CurlTobody(this.restring);
-            param = CurlToParams(restring); 
+            param = UrlToParams(url); 
             cookies = HeaderToCookies(headers);
             jsonobj = CurlToJson(restring);
             var bodytype1 = BodyTypeDetector.Detect(body);
@@ -46,15 +46,15 @@ namespace Reptile_Tools.Models
             paramcode = ParamToCode(param);
             if (jsonobj != null)
             {jsoncode = jsonobj.ToString();}else { jsoncode = null; }
-
+            bodycode = BodyToCode(body, bodytype);
         }
 
         public string CurlToUrl(string restring)
         {
             string url;
-            string pattern = @"'(?<url>https?://[^']*)\?";
-            Match match = Regex.Match(restring, pattern);
-            url = match.Groups["url"].Value;
+            string pattern = @"'(?<url>https?://[^']*)'";
+            Match match1 = Regex.Match(restring, pattern);
+            url = match1.Groups["url"].Value;
             return url;
         }
         public Dictionary<string, string> CurlToHeaders(string restring)
@@ -113,18 +113,31 @@ namespace Reptile_Tools.Models
 
             return body;
         }
-        public Dictionary<string, string> CurlToParams(string restring)
+        public Dictionary<string, string> UrlToParams(string url)
         {
-            string paramsPattern = @"(?<=\?|&)(?<key>[^=&]+)=(?<value>[^&']+)";
-            MatchCollection paramsMatches = Regex.Matches(restring, paramsPattern);
-            Dictionary<string, string> queryParams = new Dictionary<string, string>();
-            foreach (Match match in paramsMatches)
+            if (url.Contains("?"))
             {
-                string key = match.Groups["key"].Value;
-                string value = match.Groups["value"].Value;
-                queryParams[key] = value;
+                string u = "";
+                string p = "";
+                Match match = Regex.Match(url, @"^(.*?)\?(.*)$");
+                u = match.Groups[1].Value;
+                p = match.Groups[2].Value;
+                this.url = u;
+                string paramsPattern = @"(?<=\?|&)(?<key>[^=&]+)=(?<value>[^&']+)";
+                MatchCollection matches = Regex.Matches(url, paramsPattern);
+                Dictionary<string, string> queryParams = new Dictionary<string, string>();
+                foreach (Match item in matches)
+                {
+                    string key = item.Groups["key"].Value;
+                    string value = item.Groups["value"].Value;
+                    queryParams[key] = value;
+                }
+                return queryParams;
             }
-            return queryParams;
+            else
+            {
+                return null;
+            }
         }
         public JObject? CurlToJson(string restring)
         {
@@ -150,80 +163,90 @@ namespace Reptile_Tools.Models
         }
         public string? HeaderToCode(Dictionary<string, string> headers)
         {
-            var settings = new JsonSerializerSettings
+            string variable = "headers = {\r\n\t";
+            int flag = 0;
+            foreach (KeyValuePair<string, string> i in headers)
             {
-                StringEscapeHandling = StringEscapeHandling.EscapeHtml
-            };
-            if (headers == null) { return ""; }
-            else
-            {
-                string headerjson = JsonConvert.SerializeObject(headers, settings);
-                string variable = $"headers = {headerjson}\r\n";
-                return variable;
+                string a = "\"";
+                if (flag != 0)
+                {
+                    a = ",\r\n\t\"";
+                }
+                variable += a + i.Key.Trim() + "\"" + ": \"" + i.Value.Trim() + "\"";
+                flag++;
             }
+            variable += "\r\n}\r\n";
+            return variable;
         }
         public string? CookieToCode(Dictionary<string, string> cookies)
         {
-            var settings = new JsonSerializerSettings
+            if (cookies == null) return "";
+            string variable = "cookies = {\r\n\t";
+            int flag = 0;
+            foreach (KeyValuePair<string, string> i in cookies)
             {
-                StringEscapeHandling = StringEscapeHandling.EscapeHtml
-            };
-            if (cookies == null) { return ""; }
-            else
-            {
-                string cookiesjson = JsonConvert.SerializeObject(cookies, settings);
-                string variable = $"cookies = {cookiesjson}\r\n";
-                return variable;
+                string a = "\"";
+                if (flag != 0)
+                {
+                    a = ",\r\n\t\"";
+                }
+                variable += a + i.Key.Trim() + "\"" + ": \"" + i.Value.Trim() + "\"";
+                flag++;
             }
+            variable += "\r\n}\r\n";
+            return variable;
         }
         public string? ParamToCode(Dictionary<string, string> parames)
         {
-            var settings = new JsonSerializerSettings
+            if (parames==null || parames.Count < 1) return "";
+            string variable = "params = {\r\n\t";
+            int flag = 0;
+            foreach (KeyValuePair<string, string> i in parames)
             {
-                StringEscapeHandling = StringEscapeHandling.EscapeHtml
-            };
-            if (parames == null) { return ""; }
-            else
-            {
-                string paramjson = JsonConvert.SerializeObject(parames, settings);
-                string variable = $"params = {paramjson}\r\n";
-                return variable;
+                string a = "\"";
+                if (flag != 0)
+                {
+                    a = ",\r\n\t\"";
+                }
+                variable += a + i.Key.Trim() + "\"" + ": \"" + i.Value.Trim() + "\"";
+                flag++;
             }
+            variable += "\r\n}\r\n";
+            return variable;
         }
         public string BodyToCode(string bodysting, string bodytype)
         {
+            if (bodysting == "") return "";
             string variable = "";
             switch (bodytype)
             {
                 case "String":
-                    variable = $"data=\"{bodysting.ToString()}\".encode('unicode_escape')";
+                    variable = $"data = \"{bodysting.ToString()}\".encode('unicode_escape')";
                     break;
                 case "JSONObject":
-                    variable = $"data={JObject.Parse(bodysting).ToString()}\r\ndata = json.dumps(data, separators=(',', ':'))\r\n";
+                    variable = $"data = {JObject.Parse(bodysting).ToString()}\r\ndata = json.dumps(data, separators=(',', ':'))\r\n";
                     break;
                 case "JSONArray":
-                    variable = $"data={JArray.Parse(bodysting).ToString()}\r\ndata = json.dumps(data, separators=(',', ':'))\r\n";
-                    return variable;
+                    variable = $"data = {JArray.Parse(bodysting).ToString()}\r\ndata = json.dumps(data, separators=(',', ':'))\r\n";
                     break;
                 case "Invalid":
-                    return "无法解析body,";
+                    variable = "无法解析body,";
                     break;
                 case "JSONObjectKV":
-                    MatchCollection matches = Regex.Matches(bodysting, "\"(?<key>[^\"]+)\":\"(?<value>[^\"]+)\"");
+                    MatchCollection matches = Regex.Matches(bodysting, @"([^&=]+)=([^&=]+)");
 
                     // 构建 Dictionary
                     Dictionary<string, string> dictionary = new Dictionary<string, string>();
                     foreach (Match match in matches)
                     {
                         string key = match.Groups["key"].Value;
-                        string value = match.Groups["value"].Value;
+                        string value = Uri.UnescapeDataString(match.Groups[2].Value);
                         dictionary[key] = value;
                     }
                     variable = $"data={JsonConvert.SerializeObject(dictionary)}\r\ndata = json.dumps(data, separators=(',', ':'))\r\n";
-                    return variable;
                     break;
             }
-            return "";
+            return variable;
         }
     }
 }
