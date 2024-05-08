@@ -30,6 +30,11 @@
                         <ui:SymbolIcon Symbol="Cursor16"/>
                     </ui:NavigationViewItem.Icon>
                 </ui:NavigationViewItem>
+                <ui:NavigationViewItem Content="时间戳" TargetPageType="{x:Type pages:TimesStampToolsPages}">
+                    <ui:NavigationViewItem.Icon>
+                        <ui:SymbolIcon Symbol="AccessibilityCheckmark24"/>
+                    </ui:NavigationViewItem.Icon>
+                </ui:NavigationViewItem>
             </ui:NavigationView.MenuItems>
         </ui:NavigationView>
         <ui:TitleBar Title="爬虫工具" VerticalAlignment="Center" />

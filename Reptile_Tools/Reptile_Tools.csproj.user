@@ -10,12 +10,18 @@
     <Compile Update="Views\Pages\CurlToRequestsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Pages\TimesStampToolsPages.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Pages\CurlToRequestsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\TimesStampToolsPages.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

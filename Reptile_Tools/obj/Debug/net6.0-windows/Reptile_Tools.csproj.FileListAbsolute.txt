@@ -74,3 +74,5 @@ D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\refint\Repti
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Reptile_Tools.pdb
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Reptile_Tools.genruntimeconfig.cache
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\ref\Reptile_Tools.dll
+D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\TimesStampToolsPages.g.cs
+D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\TimesStampToolsPages.baml
