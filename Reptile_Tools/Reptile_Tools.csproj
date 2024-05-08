@@ -13,4 +13,16 @@
     <PackageReference Include="WPF-UI" Version="3.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="D:\Code\Csharp\Reptile_Tools\Reptile_Tools\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="D:\Code\Csharp\Reptile_Tools\Reptile_Tools\.editorconfig" />
+  </ItemGroup>
+
 </Project>

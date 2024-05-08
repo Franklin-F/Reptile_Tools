@@ -15,6 +15,10 @@ namespace Reptile_Tools.ViewModels
     {
         [ObservableProperty]
         public string? _curlstring;
+        [ObservableProperty]
+        public bool _isimport;
+        [ObservableProperty]
+        public bool _isproxies;
         public string? _pythoncode;
         public string Pythoncode
         {
@@ -58,36 +62,45 @@ namespace Reptile_Tools.ViewModels
         public void UpdaterPythonCode()
         {
             Models.CurlProcess curlProcess = new Models.CurlProcess(Curlstring);
-            Pythoncode = curlProcess.urlcode + curlProcess.headercode + curlProcess.cookiecode + curlProcess.bodycode + curlProcess.paramcode;
-            //string cookies = "{\r\n";
-            //int flag = 0;
-            //foreach (KeyValuePair<string,string> i in curlProcess.cookies)
-            //{
-            //    string a = "\"";
-            //    if (flag != 0)
-            //    {
-            //        a = ",\r\n\"";
-            //    }
-            //    cookies += a + i.Key  + "\"" + ": \"" + i.Value +"\"";
-            //    flag++;
-            //}
-            //cookies += "\r\n}";
-            //Pythoncode = cookies;
+            string codes = "";
+            if (Isimport)
+            {
+                codes = "import requests\r\n";
+                if (curlProcess.bodycode!=null && curlProcess.bodycode.Contains("json.dumps"))
+                {
+                    codes += "import json\r\n";
+                }
+                codes += "\r\n";
+            }
+            codes += curlProcess.urlcode + curlProcess.headercode + curlProcess.cookiecode + curlProcess.bodycode + curlProcess.paramcode;
 
-            //string parames = "{\r\n";
-            //int flag = 0;
-            //foreach (KeyValuePair<string, string> i in curlProcess.param)
-            //{
-            //    string a = "\"";
-            //    if (flag != 0)
-            //    {
-            //        a = ",\r\n\"";
-            //    }
-            //    parames += a + i.Key + "\"" + ": \"" + i.Value + "\"";
-            //    flag++;
-            //}
-            //parames += "\r\n}";
-            //Pythoncode = parames;
+            codes += $"res = requests.{curlProcess.method}(";
+            if (curlProcess.urlcode != "")
+            {
+                codes+= "url=url";
+            }
+            if (curlProcess.headercode != "")
+            {
+                codes += ", headers=headers";
+            }
+            if (curlProcess.cookiecode != "")
+            {
+                codes += ", cookies=cookies";
+            }
+            if (curlProcess.bodycode != "")
+            {
+                codes += ", data=data";
+            }
+            if (curlProcess.paramcode != "")
+            {
+                codes += ", params=params";
+            }
+            if (Isproxies)
+            {
+                codes += ", proxis={\"http\": \"http://127.0.0.1:7890\", \"https\": \"https://127.0.0.1:7890\"}";
+            }
+            codes += ")\r\nprint(res.text)\r\n";
+            Pythoncode = codes.ToString();
 
         }
         public MVVMCurlToRequestsViewModel()

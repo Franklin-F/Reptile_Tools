@@ -27,11 +27,11 @@
                     <ComboBoxItem Content="类封装"/>
                     <ComboBoxItem Content="函数封装"/>
                 </ComboBox>
-                <CheckBox Content="加入代理"/>
-                <CheckBox Content="模块引入"/>
+                <CheckBox Content="加入代理" IsChecked="{Binding Isproxies}"/>
+                <CheckBox Content="模块引入" IsChecked="{Binding Isimport}"/>
             </StackPanel>
             <StackPanel Grid.Column="1" Orientation="Horizontal">
-                <ui:Button Content="复制" Margin="0 0 10 0" Width="70" Height="30" Command="{Binding UpdateTextboxMaxHeightCommand}"/>
+                <ui:Button Content="复制" Margin="0 0 10 0" Width="70" Height="30" Command="{Binding CopyButtonClickCommand}"/>
                 <ui:Button Content="转换" Margin="0 0 10 0" Width="100" Height="30" Appearance="Primary" Command="{Binding UpdaterPythonCodeCommand}" />
             </StackPanel>
         </Grid>

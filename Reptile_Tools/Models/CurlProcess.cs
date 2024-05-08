@@ -21,6 +21,7 @@ namespace Reptile_Tools.Models
         public readonly Dictionary<string, string> param;
         public readonly JObject? jsonobj;
         public string bodytype;
+        public string method;
 
         public readonly string? urlcode;
         public readonly string? headercode;
@@ -39,6 +40,14 @@ namespace Reptile_Tools.Models
             jsonobj = CurlToJson(restring);
             var bodytype1 = BodyTypeDetector.Detect(body);
             bodytype = bodytype1.ToString();
+            if (body != "")
+            {
+                method = "post";
+            }
+            else
+            {
+                method = "get";
+            }
 
             this.urlcode = UrlToCode(url);
             headercode = HeaderToCode(headers);
@@ -234,16 +243,21 @@ namespace Reptile_Tools.Models
                     break;
                 case "JSONObjectKV":
                     MatchCollection matches = Regex.Matches(bodysting, @"([^&=]+)=([^&=]+)");
-
-                    // 构建 Dictionary
-                    Dictionary<string, string> dictionary = new Dictionary<string, string>();
+                    variable = "data = {\r\n\t";
+                    int flag = 0;
+                    string a = "";
                     foreach (Match match in matches)
                     {
-                        string key = match.Groups["key"].Value;
+                        string key = match.Groups[1].Value;
                         string value = Uri.UnescapeDataString(match.Groups[2].Value);
-                        dictionary[key] = value;
+                        if (flag != 0)
+                        {
+                            a = ",\r\n\t";
+                        }
+                        variable += a + $"\"{key.Trim()}\": {value.Trim()}";
+                        flag++;
                     }
-                    variable = $"data={JsonConvert.SerializeObject(dictionary)}\r\ndata = json.dumps(data, separators=(',', ':'))\r\n";
+                    variable += "\r\n}\r\ndata = json.dumps(data, separators=(',', ':'))\r\n";
                     break;
             }
             return variable;
