@@ -7,7 +7,10 @@
 
 
 #### 感谢
-在学习过程中<a href="https://github.com/lov729">   <img src="https://avatars.githubusercontent.com/u/54023739?v=4" /> </a>对我的帮助和解疑
+
+<a href="https://github.com/lov729">   <img src="https://avatars.githubusercontent.com/u/54023739?v=4" size="25" /> </a>
+
+在学习过程中,对我的帮助和解疑
 
 
 
