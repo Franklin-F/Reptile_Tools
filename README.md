@@ -8,11 +8,12 @@
 
 #### 感谢
 
-<a href="https://github.com/lov729">   <img src="https://avatars.githubusercontent.com/u/54023739?v=4width=300" /> </a>
+<img src="https://avatars.githubusercontent.com/u/54023739?v=4" alt="lov729" style="zoom:25%;" />
+[lov729](https://github.com/lov729)
+
+
 
 在学习过程中,对我的帮助和解疑
-
-
 
 #### 灵感来源
 
@@ -34,6 +35,8 @@ https://tool.lu/timestamp/ 时间戳工具
 
 
 [Curl 测试代码](./CurlTest.md)
+
+#### PS:
 
 在这里，我也想分享一些个人经历。作为一名残疾人，我目前没有固定的工作。对我而言，编程是一种表达自己、与世界连接的方式。我希望这个小工具不仅能为他人带来便利，也能够为我自己开启一扇门。
 
