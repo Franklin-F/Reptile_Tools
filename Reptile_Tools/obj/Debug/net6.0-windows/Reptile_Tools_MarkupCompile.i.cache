@@ -1,5 +1,5 @@
 ﻿Reptile_Tools
-
+1.0.0.0
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\App.xaml
 7-124302438
 
-17-394524279
+19-1687749382
 197-41846943
 MainWindow.xaml;Views\Pages\Base64ToolsPage.xaml;Views\Pages\CurlToRequestsPage.xaml;Views\Pages\HeaderToolsPage.xaml;Views\Pages\MD5ToolsPage.xaml;Views\Pages\TimesStampToolsPages.xaml;Views\Pages\UrlCodePage.xaml;
 
-False
+True
 
