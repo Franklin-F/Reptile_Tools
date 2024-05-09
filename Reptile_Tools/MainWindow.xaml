@@ -57,7 +57,7 @@
                 
                 <ui:NavigationViewItem Content="Base64 加解密" TargetPageType="{x:Type pages:Base64ToolsPage}">
                     <ui:NavigationViewItem.Icon>
-                        <ui:SymbolIcon Symbol="AccessibilityCheckmark24"/>
+                        <ui:SymbolIcon Symbol="Backpack32"/>
                     </ui:NavigationViewItem.Icon>
                 </ui:NavigationViewItem>
             
