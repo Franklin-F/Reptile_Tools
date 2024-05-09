@@ -8,7 +8,7 @@
 
 #### 感谢
 
-<a href="https://github.com/lov729">   <img src="https://avatars.githubusercontent.com/u/54023739?v=4" style="max-width: 25%;" /> </a>
+<a href="https://github.com/lov729">   <img src="https://avatars.githubusercontent.com/u/54023739?v=4width=300" /> </a>
 
 在学习过程中,对我的帮助和解疑
 
