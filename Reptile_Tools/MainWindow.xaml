@@ -69,7 +69,7 @@
             
             </ui:NavigationView.MenuItems>
             <ui:NavigationView.FooterMenuItems>
-                <ui:NavigationViewItem Content="关于" NavigationCacheMode="Disabled" TargetPageType="{x:Type pages:JsonToolsPage}">
+                <ui:NavigationViewItem Content="主题和关于" NavigationCacheMode="Disabled" TargetPageType="{x:Type pages:AboutPage}">
                     <ui:NavigationViewItem.Icon>
                         <ui:SymbolIcon Symbol="TableMoveAbove20" />
                     </ui:NavigationViewItem.Icon>

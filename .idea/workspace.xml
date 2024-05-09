@@ -1,8 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="10b2d546-79b1-4eed-a417-b2cc92c04e68" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/ViewModels/MVVMJsonToolsPageViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/Views/Pages/JsonToolsPage.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/Views/Pages/JsonToolsPage.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_0h5udux2_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_0h5udux2_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_0h5udux2_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_0h5udux2_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_0h5udux2_wpftmp.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_1um0ovnh_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_1um0ovnh_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_1um0ovnh_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_1um0ovnh_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_1um0ovnh_wpftmp.csproj.BuildWithSkipAnalyzers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_1um0ovnh_wpftmp.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_22hwrpby_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_22hwrpby_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_22hwrpby_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_22hwrpby_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_22hwrpby_wpftmp.csproj.BuildWithSkipAnalyzers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_22hwrpby_wpftmp.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_2hq40mhh_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_2hq40mhh_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_2hq40mhh_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_2hq40mhh_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_2hq40mhh_wpftmp.csproj.BuildWithSkipAnalyzers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_2hq40mhh_wpftmp.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_41qh5xiv_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_41qh5xiv_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_41qh5xiv_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_41qh5xiv_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_41qh5xiv_wpftmp.csproj.BuildWithSkipAnalyzers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_41qh5xiv_wpftmp.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_chuxztbk_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_chuxztbk_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_chuxztbk_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_chuxztbk_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_chuxztbk_wpftmp.csproj.BuildWithSkipAnalyzers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_chuxztbk_wpftmp.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_dr2d3byr_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_dr2d3byr_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_dr2d3byr_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_dr2d3byr_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_dr2d3byr_wpftmp.csproj.BuildWithSkipAnalyzers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_dr2d3byr_wpftmp.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_gsa0dwhf_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_gsa0dwhf_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_gsa0dwhf_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_gsa0dwhf_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_gsa0dwhf_wpftmp.csproj.BuildWithSkipAnalyzers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_gsa0dwhf_wpftmp.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_n3zuwhj4_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_n3zuwhj4_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_n3zuwhj4_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_n3zuwhj4_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_n3zuwhj4_wpftmp.csproj.BuildWithSkipAnalyzers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_n3zuwhj4_wpftmp.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_psqpm4kr_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_psqpm4kr_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_psqpm4kr_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_psqpm4kr_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_psqpm4kr_wpftmp.csproj.BuildWithSkipAnalyzers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_psqpm4kr_wpftmp.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_w20i2v2s_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_w20i2v2s_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_w20i2v2s_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_w20i2v2s_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_w20i2v2s_wpftmp.csproj.BuildWithSkipAnalyzers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_w20i2v2s_wpftmp.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_wza0tvcr_wpftmp.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_wza0tvcr_wpftmp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_wza0tvcr_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_wza0tvcr_wpftmp.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_wza0tvcr_wpftmp.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Views/Pages/JsonToolsPage.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Views/Pages/JsonToolsPage.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Views/Pages/JsonToolsPage.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/Reptile_Tools.csproj.user" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/Reptile_Tools.csproj.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/GeneratedInternalTypeHelper.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/GeneratedInternalTypeHelper.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/MainWindow.baml" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/MainWindow.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/MainWindow.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/MainWindow.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/MainWindow.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools.g.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_MarkupCompile.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_MarkupCompile.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_MarkupCompile.i.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_MarkupCompile.i.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_MarkupCompile.i.lref" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_MarkupCompile.i.lref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_MarkupCompile.lref" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/Reptile_Tools_MarkupCompile.lref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/ref/Reptile_Tools.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/ref/Reptile_Tools.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/refint/Reptile_Tools.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Reptile_Tools/obj/Debug/net6.0-windows/refint/Reptile_Tools.dll" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2gE5zKCkRkD6kF7M7KnO4GNM4JX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "http.proxy",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PY-241.14494.241" />
+        <option value="bundled-python-sdk-0509580d9d50-28c9f5db9ffe-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.14494.241" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="10b2d546-79b1-4eed-a417-b2cc92c04e68" name="更改" comment="" />
+      <created>1715250173326</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715250173326</updated>
+      <workItem from="1715250178418" duration="1204000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
 </project>

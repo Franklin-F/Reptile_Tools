@@ -5,6 +5,8 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>a4l8j-z021b-001.ico</ApplicationIcon>
+    <PackageIcon>reptile.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,6 +25,17 @@
 
   <ItemGroup>
     <EditorConfigFiles Remove="D:\Code\Csharp\Reptile_Tools\Reptile_Tools\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="a4l8j-z021b-001.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Users\A\Downloads\reptile.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

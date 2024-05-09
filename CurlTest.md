@@ -10,7 +10,7 @@ curl 'http://101.43.202.196:8080/login' \
   -H 'Origin: http://101.43.202.196:8080' \
   -H 'Pragma: no-cache' \
   -H 'Proxy-Connection: keep-alive' \
-  -H 'Referer: http://101.43.202.196:8090/console/login?redirect_uri=http://101.43.202.196:8090/console/' \
+  -H 'Referer: http://101.43.202.196:8080/console/login?redirect_uri=http://101.43.202.196:8080/console/' \
   -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36' \
   -H 'X-XSRF-TOKEN: 454b8c02-ff10-4979-a224-8590b49992db' \
   --data-raw '_csrf=454b8c02-ff10-4979-a224-8590b49992db&username=admin&password=hEOT8aC9KICCxInshQQ5ESRGli5EMKeEbPK8Sj%2B7SLHMpC5kzGdyB%2BVdMQ2GPKXiArBVenreR52f5QlpTNuqI5572WA4V4kkxbiSfLLdN5uGAzHxbeo74%2B%2B9CsyqAhgDYfwjdDrln4M%2F2Vis00XfXXnQiSKE2Op80MXum9kqmWFf7DdJYfiREj4yf%2BRBmo9dSMUk9Z8VBg6JC%2B6A6XevShX5r2ZT3bZP84EJgQzZSbuklGl2fq%2Few8C1%2BaIVaQh50tlshpKQC6imDOwHDmzKC5H%2BfWn2KjH7XIFw7ocyLTbJDmWNET10kR9iEAxaHX76yn%2FGuHMOpBCn4UJKEuhBFg%3D%3D' \
@@ -44,7 +44,7 @@ curl 'https://api.twitter.com/1.1/account/settings.json?include_ext_sharing_audi
   -H 'accept-language: zh-CN,zh;q=0.9,en;q=0.8' \
   -H 'authorization: Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA' \
   -H 'cache-control: no-cache' \
-  -H 'cookie: guest_id_marketing=v1%3A170312707178523683; guest_id_ads=v1%3A170312707178523683; guest_id=v1%3A170312707178523683; _ga=GA1.2.582437989.1703328813; kdt=HT54mzSnaHN5ZqFq0o803VzfyA9IW0OO5nFPmPJb; auth_token=c95b4461a1376ec90895c162d7514483ac2c520c; ct0=6abe6cee8588029122002c192091f2a602dd696b9a23a109e3ef68a4e38acf7a3d93ee9587a1ab089f4f0d88753d5dc63393e39341f47986adca2e027d768dadcb9afd9791a15e238207fe0cf04b4cc1; twid=u%3D1596700166009933824; external_referer=padhuUp37zjgzgv1mFWxJ12Ozwit7owX|0|8e8t2xd8A2w%3D; _gid=GA1.2.560577386.1715075228; personalization_id="v1_v0CiOggLiad9itqP/ErL5w=="' \
+  -H 'cookie: guest_id_marketing=v1%3A170312707178523683; guest_id_ads=v1%3A170312707178523683; guest_id=v1%3A170312707178523683; _ga=GA1.2.582437989.1703328813; kdt=HT54mzSnaHN5ZqFq0o803VzfyA9IW0OO5nFPmPJb; auth_token=c95b4461a1376ec90895c162d7514483ac2c520c; ct0=6abe6cee8588029122002c192091f2a602dd696b9a23a109e3ef68a4e38acf7a3d93ee9587a1ab089f4f0d88753d68dadcb9afd9791a15e238207fe0cf04b4cc1; twid=u%3D1596700166009933824; external_referer=padhuUp37zjgzgv1mFWxJ12Ozwit7owX|0|8e8t2xd8A2w%3D; _gid=GA1.2.560577386.1715075228; personalization_id="v1_v0CiOggLiad9itqP/ErL5w=="' \
   -H 'origin: https://twitter.com' \
   -H 'pragma: no-cache' \
   -H 'referer: https://twitter.com/' \
@@ -56,7 +56,7 @@ curl 'https://api.twitter.com/1.1/account/settings.json?include_ext_sharing_audi
   -H 'sec-fetch-site: same-site' \
   -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36' \
   -H 'x-client-transaction-id: CezNzMW2P2hFmI2DavosXBzWOB1cQH6STy2AYdFfhsXigZez/8akeR5k+lrZAIZLvN/t4wiKOfKxMlpP/GMKmkwEOc+BCg' \
-  -H 'x-csrf-token: 6abe6cee8588029122002c192091f2a602dd696b9a23a109e3ef68a4e38acf7a3d93ee9587a1ab089f4f0d88753d5dc63393e39341f47986adca2e027d768dadcb9afd9791a15e238207fe0cf04b4cc1' \
+  -H 'x-csrf-token: 6abe6cee8588029122002c192091f2a602dd696b9a23a109e3ef68a4e38acf7a3d93ee9587a1ab089f2q2328753d5dc63393e39341f47986adca2e027d768dadcb9afd9791a15e238207fe0cf04b4cc1' \
   -H 'x-twitter-active-user: yes' \
   -H 'x-twitter-auth-type: OAuth2Session' \
   -H 'x-twitter-client-language: zh-cn'
