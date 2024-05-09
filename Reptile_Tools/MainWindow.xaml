@@ -27,7 +27,7 @@
             <ui:NavigationView.MenuItems>
                 <ui:NavigationViewItem Content="Curl 转 requests" NavigationCacheMode="Enabled" TargetPageType="{x:Type pages:CurlToRequestsPage}">
                     <ui:NavigationViewItem.Icon>
-                        <ui:SymbolIcon Symbol="Cursor16"/>
+                        <ui:SymbolIcon Symbol="ApprovalsApp28"/>
                     </ui:NavigationViewItem.Icon>
                 </ui:NavigationViewItem>
                 
@@ -45,7 +45,7 @@
                 
                 <ui:NavigationViewItem Content="Url 编码" TargetPageType="{x:Type pages:UrlCodePage}">
                     <ui:NavigationViewItem.Icon>
-                        <ui:SymbolIcon Symbol="ApprovalsApp28"/>
+                        <ui:SymbolIcon Symbol="Cursor16"/>
                     </ui:NavigationViewItem.Icon>
                 </ui:NavigationViewItem>
                 

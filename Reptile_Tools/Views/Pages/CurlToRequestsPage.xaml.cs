@@ -33,7 +33,7 @@ namespace Reptile_Tools.Views.Pages
             var viewmodels = DataContext as MVVMCurlToRequestsViewModel;
             if (viewmodels != null)
             {
-                viewmodels.Textboxmaxheight = (ActualHeight - 48) /19 * 9;
+                viewmodels.Textboxmaxheight = ((ActualHeight - 48) / 19 * 9) + 10;
             }
         }
     }

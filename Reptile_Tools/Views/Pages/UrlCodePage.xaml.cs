@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Reptile_Tools.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,16 @@ namespace Reptile_Tools.Views.Pages
         public UrlCodePage()
         {
             InitializeComponent();
+            this.DataContext = new MVVMUrlCodePageViewModel();
+        }
+
+        private void Page_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            var viewmodels = DataContext as MVVMUrlCodePageViewModel;
+            if (viewmodels != null)
+            {
+                viewmodels.Textboxmaxheight = ((ActualHeight - 48) / 19 * 9) + 10;
+            }
         }
     }
 }
