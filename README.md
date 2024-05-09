@@ -9,10 +9,8 @@
 #### 感谢
 <a href="https://github.com/lov729">
   <img src="https://avatars.githubusercontent.com/u/54023739?v=4" width="100" height="100" alt="lov729" />
-  lov729
+<br/>  lov729
 </a>
-
-lov729: https://github.com/lov729
 
 在学习过程中,对我的帮助和解疑
 
