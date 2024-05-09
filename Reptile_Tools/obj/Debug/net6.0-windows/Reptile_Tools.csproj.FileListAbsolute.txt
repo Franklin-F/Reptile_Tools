@@ -76,3 +76,11 @@ D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Reptile_Tool
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\ref\Reptile_Tools.dll
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\TimesStampToolsPages.g.cs
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\TimesStampToolsPages.baml
+D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\Base64ToolsPage.g.cs
+D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\HeaderToolsPage.g.cs
+D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\MD5ToolsPage.g.cs
+D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\UrlCodePage.g.cs
+D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\Base64ToolsPage.baml
+D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\HeaderToolsPage.baml
+D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\MD5ToolsPage.baml
+D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\UrlCodePage.baml

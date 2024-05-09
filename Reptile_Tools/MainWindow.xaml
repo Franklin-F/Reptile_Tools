@@ -30,11 +30,37 @@
                         <ui:SymbolIcon Symbol="Cursor16"/>
                     </ui:NavigationViewItem.Icon>
                 </ui:NavigationViewItem>
+                
                 <ui:NavigationViewItem Content="时间戳" TargetPageType="{x:Type pages:TimesStampToolsPages}">
+                    <ui:NavigationViewItem.Icon>
+                        <ui:SymbolIcon Symbol="AccessTime24"/>
+                    </ui:NavigationViewItem.Icon>
+                </ui:NavigationViewItem>
+                
+                <ui:NavigationViewItem Content="Header 转 Dict" TargetPageType="{x:Type pages:HeaderToolsPage}">
+                    <ui:NavigationViewItem.Icon>
+                        <ui:SymbolIcon Symbol="AccessibilityCheckmark48"/>
+                    </ui:NavigationViewItem.Icon>
+                </ui:NavigationViewItem>
+                
+                <ui:NavigationViewItem Content="Url 编码" TargetPageType="{x:Type pages:UrlCodePage}">
+                    <ui:NavigationViewItem.Icon>
+                        <ui:SymbolIcon Symbol="ApprovalsApp28"/>
+                    </ui:NavigationViewItem.Icon>
+                </ui:NavigationViewItem>
+                
+                <ui:NavigationViewItem Content="MD5 加解密" TargetPageType="{x:Type pages:MD5ToolsPage}">
+                    <ui:NavigationViewItem.Icon>
+                        <ui:SymbolIcon Symbol="DocumentSplitHint16"/>
+                    </ui:NavigationViewItem.Icon>
+                </ui:NavigationViewItem>
+                
+                <ui:NavigationViewItem Content="Base64 加解密" TargetPageType="{x:Type pages:Base64ToolsPage}">
                     <ui:NavigationViewItem.Icon>
                         <ui:SymbolIcon Symbol="AccessibilityCheckmark24"/>
                     </ui:NavigationViewItem.Icon>
                 </ui:NavigationViewItem>
+            
             </ui:NavigationView.MenuItems>
         </ui:NavigationView>
         <ui:TitleBar Title="爬虫工具" VerticalAlignment="Center" />
