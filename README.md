@@ -8,7 +8,7 @@
 
 #### 感谢
 
-<img src="https://avatars.githubusercontent.com/u/54023739?v=4" alt="lov729" style="zoom:25%;" />
+<img src="https://avatars.githubusercontent.com/u/54023739?v=4?width=200&height=200" alt="lov729" />
 [lov729](https://github.com/lov729)
 
 
