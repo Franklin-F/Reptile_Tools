@@ -16,6 +16,9 @@
     <Compile Update="Views\Pages\HeaderToolsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Pages\JsonToolsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Pages\MD5ToolsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -37,6 +40,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Pages\HeaderToolsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\JsonToolsPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Pages\MD5ToolsPage.xaml">

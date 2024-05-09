@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\App.xaml
-7-124302438
+8-88395219
 
-21-2035731276
+231304814568
 197-41846943
-MainWindow.xaml;Views\Pages\Base64ToolsPage.xaml;Views\Pages\CurlToRequestsPage.xaml;Views\Pages\HeaderToolsPage.xaml;Views\Pages\MD5ToolsPage.xaml;Views\Pages\TimesStampToolsPages.xaml;Views\Pages\UrlCodePage.xaml;
+MainWindow.xaml;Views\Pages\Base64ToolsPage.xaml;Views\Pages\CurlToRequestsPage.xaml;Views\Pages\HeaderToolsPage.xaml;Views\Pages\JsonToolsPage.xaml;Views\Pages\MD5ToolsPage.xaml;Views\Pages\TimesStampToolsPages.xaml;Views\Pages\UrlCodePage.xaml;
 
 False
 

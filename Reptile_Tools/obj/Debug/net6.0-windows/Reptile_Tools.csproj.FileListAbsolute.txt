@@ -84,3 +84,5 @@ D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\HeaderToolsPage.baml
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\MD5ToolsPage.baml
 D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\UrlCodePage.baml
+D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\JsonToolsPage.g.cs
+D:\Code\Csharp\Reptile_Tools\Reptile_Tools\obj\Debug\net6.0-windows\Views\Pages\JsonToolsPage.baml

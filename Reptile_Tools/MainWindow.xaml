@@ -39,7 +39,7 @@
                 
                 <ui:NavigationViewItem Content="Header 转 Dict" TargetPageType="{x:Type pages:HeaderToolsPage}">
                     <ui:NavigationViewItem.Icon>
-                        <ui:SymbolIcon Symbol="AccessibilityCheckmark48"/>
+                        <ui:SymbolIcon Symbol="HandOpenHeart32"/>
                     </ui:NavigationViewItem.Icon>
                 </ui:NavigationViewItem>
                 
@@ -60,8 +60,21 @@
                         <ui:SymbolIcon Symbol="Backpack32"/>
                     </ui:NavigationViewItem.Icon>
                 </ui:NavigationViewItem>
+                
+                <ui:NavigationViewItem Content="json串格式化" TargetPageType="{x:Type pages:JsonToolsPage}">
+                    <ui:NavigationViewItem.Icon>
+                        <ui:SymbolIcon Symbol="CodeJs16"/>
+                    </ui:NavigationViewItem.Icon>
+                </ui:NavigationViewItem>
             
             </ui:NavigationView.MenuItems>
+            <ui:NavigationView.FooterMenuItems>
+                <ui:NavigationViewItem Content="关于" NavigationCacheMode="Disabled" TargetPageType="{x:Type pages:JsonToolsPage}">
+                    <ui:NavigationViewItem.Icon>
+                        <ui:SymbolIcon Symbol="TableMoveAbove20" />
+                    </ui:NavigationViewItem.Icon>
+                </ui:NavigationViewItem>
+            </ui:NavigationView.FooterMenuItems>
         </ui:NavigationView>
         <ui:TitleBar Title="爬虫工具" VerticalAlignment="Center" />
     </Grid>
